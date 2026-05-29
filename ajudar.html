@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Ajudar - Agro Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">AGRO FORTE</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="praticas.html">Práticas</a></li>
+            <li><a href="tecnologia.html">Tecnologia</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="ajudar.html">Como Ajudar</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="height: 50vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=1600');">
+        <h1 class="reveal">Faça a Diferença</h1>
+        <p class="reveal">Pequenas ações geram grandes transformações. Veja como você pode contribuir.</p>
+    </header>
+
+    <section>
+        <div class="section-title reveal">
+            <h2>Calculadora de Impacto</h2>
+            <p>Descubra o quão sustentáveis são suas práticas agrícolas.</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="interactive-container reveal">
+            <form id="impact-form">
+                <div class="form-group">
+                    <label for="area">Tamanho da Propriedade (Hectares):</label>
+                    <input type="number" id="area" placeholder="Ex: 10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="water-method">Sistema de Irrigação:</label>
+                    <select id="water-method" required>
+                        <option value="">Selecione...</option>
+                        <option value="gotejamento">Gotejamento (Alta Eficiência)</option>
+                        <option value="aspersao">Aspersão (Média Eficiência)</option>
+                        <option value="gravidade">Inundação/Gravidade (Baixa Eficiência)</option>
+                        <option value="chuva">Apenas Chuva</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="energy-source">Fonte de Energia Principal:</label>
+                    <select id="energy-source" required>
+                        <option value="">Selecione...</option>
+                        <option value="solar">Solar Fotovoltaica</option>
+                        <option value="eolica">Eólica</option>
+                        <option value="rede">Rede Elétrica Comum</option>
+                        <option value="diesel">Gerador a Diesel</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Calcular Sustentabilidade</button>
+            </form>
+
+            <div id="result">
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--gray-bg);">
+        <div class="section-title reveal">
+            <h2>Guia de Ações Práticas</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="grid">
+            <div class="card reveal">
+                <h3>Para o Produtor</h3>
+                <ul>
+                    <li>Analise o solo anualmente.</li>
+                    <li>Proteja as matas ciliares.</li>
+                    <li>Invista em energia limpa.</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Para o Cidadão</h3>
+                <ul>
+                    <li>Consuma produtos locais.</li>
+                    <li>Evite o desperdício de alimentos.</li>
+                    <li>Apoie feiras orgânicas.</li>
+                </ul>
+            </div>
+            <div class="card reveal">
+                <h3>Para o Estudante</h3>
+                <ul>
+                    <li>Participe do Agrinho.</li>
+                    <li>Crie hortas escolares.</li>
+                    <li>Compartilhe este site!</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Agro Forte - Futuro Sustentável</h3>
+            <p>Um projeto dedicado à conscientização sobre práticas agrícolas inovadoras e preservação ambiental.</p>
+            <p><strong>Desenvolvido para o Concurso Agrinho 2026</strong></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agro Forte. Criado com dedicação por <strong>Usuário</strong> em colaboração com <strong>Manus</strong>.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Este projeto é um exemplo de inovação digital aplicada ao campo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
